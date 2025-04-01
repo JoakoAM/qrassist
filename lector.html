@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de PRUEBAS</title>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Bootstrap CSS and JS for alert functionality -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include html5-qrcode library -->
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <!-- Include your custom JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/js.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="fondo">
+        <div id="todolec" class="container_lector">
+            <div id="cosasregis">
+                <!--boton para ver registro -->
+                <button type="submit" id="ver_reg" class="sign">Ver Registro</button>
+                <div id="lector" class="lector">
+                    <button type="submit" class="stop_lector" id="stoplector">Detener lector</button>
+                    <button type="submit" class="salida" id="salida">Salida</button>
+                    <button type="submit" class="entrada" id="entrada">Entrada</button>
+                    <video id="video" width="0" height="0" autoplay></video>
+                    <div id="reader" class="reader"></div>
+                </div>
+            </div>
+        </div>
+        <div id="usuario" class="container_user">
+            <!--<button type="submit" name="soli_qr" id="buttonqr">Solicitar un QR</button> -->
+            <button class="signqr" id="buttonqr">Solicitar QR</button>
+            <button class="signlugar" id="verlugar">Ver lugar asignado</button>
+            <div id="estacionamiento-container">
+            </div>
+        </div>
+        <div class="buttonquitarreg">
+            <button type="submit" id="quitar_reg" class="quitar_reg">Quitar registro</button>
+        </div>
+        <div id="qr-container">
+        </div>
+        <div id="tabla-registros">
+        </div>
+        <div id="tabla-lugares">
+        </div>
+    </div>
+
+
+
+
+</body>
+
+
+</html>
